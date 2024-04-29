@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Nanum+Pen+Script&family=Protest+Revolution&family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Protest+Revolution&family=Rubik+Bubbles&display=swap');
+:root{
+    --celadon: #b9e3c6ff;
+--dogwood-rose: #d90368ff;
+--cherry-blossom-pink: #edafb8ff;
+--black: #000000ff;
+--tea-green: #c7efcfff;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.navbar{
+    width:100%;
+    background-color: var(--celadon); 
+    height: 8vh; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+}
+
+.nav-title{
+    font-family: Kalam;
+}
+
+.nav-logo{
+    height:90%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+    width: 100%;
+    background-color: var(--black);
+    color: var(--celadon);
+}
+
+.nav-logo{
+    height: 7vh;
+    margin: 2vmin;
+}
+
+.nav-link{
+    margin-right: 2vmin;
+    text-decoration: none;
+    color: var(--celadon);
+    font-size: 3vmin;
+    font-family: Nanum Pen Script;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    scale: 0.98;
+}
+
+.body-content{
+    width:100%;
+    height: fit-content;
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0.25turn, var(--dogwood-rose), var(--cherry-blossom-pink), var(--dogwood-rose));
+}
+
+.footer{
+    background-color: black;
+    height: fit-content;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-grid{
+    margin-bottom: 10vh;
+    width: 60%;
+    height: 60vh;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--cherry-blossom-pink);
+}
+
+.lyric{
+    font-size: 4vmin;
+    text-align: center;
+    color: var(--black);
+    margin-top: 2vmin;
+}
+
+.image-box{
+    width: 100%;
+    height: 100%;
+    max-height: 60vh;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.music-info-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.music-image{
+    width: 45vmin;
+    height: 45vmin;
+    transform: 0.5s ease;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+}
+
+.music-image:hover{
+    filter: brightness(50%);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.song-name{
+    font-size: 8.5vmin;
+    color: var(--black);
+    text-align: center;
+    line-height: 80%;
+    margin-bottom: 2vmin;
+}
+
+.music-supp-text{
+    font-size: 4vmin;
+    text-align: center;
+}
+
+.artist-name{
+    font-size: 5vmin;
+    color: var(--black);
+    text-align: center;
+}
+
+.album{
+    color:var(--black);
+    font-size: 5vmin;
+    text-align: center;
+}
+
+.play-button{
+    width: 40vmin;
+    height: 40vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;transform: translateX(-50%) translateY(-50%);
+    z-index: 0;
+}
